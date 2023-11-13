@@ -1,4 +1,4 @@
-[bild1]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Big Picture"
+[bild1]: https://github.com/mthitservice/202346TUEVPWS/blob/main/202346%20T%C3%9CV%20PS%20T1.png "Big Picture"
 # 202346TUEVPWS
 ## Powershell Kurs
 Trainer: Michael Lindner
