@@ -2,13 +2,20 @@
 ## Powershell Kurs
 ### Trainer: Michael Lindner
 
+## Die wichtigsten Repositorys
+### Powershell Gallery
+https://www.powershellgallery.com/
+### Nuget
+https://www.nuget.org/
+### Winget
+https://winget.run/
+
 >Zumstarten der Skriptaufzeichnung folgenden Skript benutzen:
 ``` powershell
 Start-Transcript -Path "c:\transcripts\transcript0.txt" -NoClobber
 ```
 Installation Winget
 ```
-
 # get latest download url
 $URL = "https://api.github.com/repos/microsoft/winget-cli/releases/latest"
 $URL = (Invoke-WebRequest -Uri $URL).Content | ConvertFrom-Json |
