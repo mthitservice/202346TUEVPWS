@@ -2,7 +2,7 @@
 ## Powershell Kurs
 Trainer: Michael Lindner
 ## Das BigPicture ;)
-![alt text][logo]
+![alt text][202346 TÜV PS T1.png]
 ## Die wichtigsten Repositorys
 ### Powershell Gallery
 https://www.powershellgallery.com/
