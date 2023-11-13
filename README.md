@@ -2,6 +2,10 @@
 # 202346TUEVPWS
 ## Powershell Kurs
 Trainer: Michael Lindner
+
+## Alle Labs zum auskopieren
+https://github.com/MicrosoftLearning/AZ-040T00-Automating-Administration-with-PowerShell/tree/master/Instructions/Labs
+
 ## Das BigPicture ;)
 ![alt text][bild1]
 ## Die wichtigsten Repositorys
