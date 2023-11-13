@@ -1,7 +1,8 @@
 # 202346TUEVPWS
 ## Powershell Kurs
-### Trainer: Michael Lindner
-
+Trainer: Michael Lindner
+## Das BigPicture ;)
+![alt text][logo]
 ## Die wichtigsten Repositorys
 ### Powershell Gallery
 https://www.powershellgallery.com/
