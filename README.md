@@ -1,8 +1,9 @@
+[bild1]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Big Picture"
 # 202346TUEVPWS
 ## Powershell Kurs
 Trainer: Michael Lindner
 ## Das BigPicture ;)
-![alt text][202346 TÜV PS T1.png]
+![alt text][bild1]
 ## Die wichtigsten Repositorys
 ### Powershell Gallery
 https://www.powershellgallery.com/
