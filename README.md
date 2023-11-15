@@ -6,6 +6,23 @@ Trainer: Michael Lindner
 ## Alle Labs zum auskopieren
 https://github.com/MicrosoftLearning/AZ-040T00-Automating-Administration-with-PowerShell/tree/master/Instructions/Labs
 
+## PowerShell Bookware
+
+Ein Ebook als PDF - https://onedrive.live.com/?authkey=%21AJdUaNzW7L9yC18&cid=5A8D2641E0963A97&id=5A8D2641E0963A97%216929&parId=5A8D2641E0963A97%21832&o=OneUp
+
+Lernpfad von Microsoft und das Buch dazu als E-Book:
+https://learn.microsoft.com/en-us/powershell/scripting/learn/ps101/00-introduction?view=powershell-7.3
+
+https://leanpub.com/powershell101
+
+Für die Administration Exchange (Nicht nur Powershell) :
+
+https://www.frankysweb.de/
+
+
+
+
+
 ## Das BigPicture ;)
 ![alt text][bild1]
 ## Die wichtigsten Repositorys
