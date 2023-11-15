@@ -95,3 +95,62 @@ winget install -e --id Microsoft.VisualStudioCode
 ```
 New-SelfSignedCertificate -CertStoreLocation Cert:\LocalMachine\My -Subject "CN=YOURDOMAIN" -Signer $root -NotAfter (Get-Date).AddYears(3) -KeyLength 2048 -KeyUsage DigitalSignature -Type CodeSigningCert -KeyExportPolicy Exportable
 ```
+
+>Transaktionen (Registry)
+``` script
+# BEISPIEL Transaktion starten und zurück rollen
+
+C:\PS>cd hkcu:\software
+
+PS HKCU:\software> start-transaction
+
+PS HKCU:\software> new-item MyCompany -UseTransaction
+
+PS HKCU:\software> new-itemproperty MyCompany -name MyKey -value 123 -UseTransaction
+
+PS HKCU:\software> undo-transaction
+```
+
+``` script
+# BEISPIEL Transaktion starten und ausführen
+
+C:\PS>cd hkcu:\software
+
+PS HKCU:\software> start-transaction
+
+PS HKCU:\software> new-item MyCompany -UseTransaction
+
+PS HKCU:\software> new-itemproperty MyCompany -name MyKey -value 123 -UseTransaction
+
+PS HKCU:\software> complete-transaction
+```
+
+``` script
+# BEISPIEL Transaktion starten, überprüfen und ausführen
+
+C:\PS>cd hkcu:\software
+
+PS HKCU:\software> start-transaction
+
+PS HKCU:\software> new-item MyCompany -UseTransaction
+
+PS HKCU:\software> new-itemproperty MyCompany -name MyKey -value 123 -UseTransaction
+
+PS HKCU:\software> complete-transaction
+```
+
+``` script
+# BEISPIEL Transaktion starten, überprüfen und ausführen
+
+C:\PS>cd hkcu:\software
+
+PS HKCU:\software> start-transaction
+
+PS HKCU:\software> new-item MyCompany -UseTransaction
+
+PS HKCU:\software> new-itemproperty MyCompany -name MyKey -value 123 -UseTransaction
+
+PS HKCU:\software> get-transaction
+
+PS HKCU:\software> complete-transaction
+```
