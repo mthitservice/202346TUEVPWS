@@ -154,3 +154,35 @@ PS HKCU:\software> get-transaction
 
 PS HKCU:\software> complete-transaction
 ```
+
+>Beispielprojekt
+```
+# Passwort generieren
+#$c=Get-Credential # Passwort erfragen
+#$c  |Export-Clixml -Path 'C:\tuev\p1\pwd.xml' # in Datei speichern
+
+# Passwort generieren mit Nutzer und Computerbezug
+#$c=Get-Credential # Passwort erfragen
+$rootpath='C:\tuev\p1\'
+
+$daten= $rootpath + 'Cred_' + $env:USERNAME + '_' + $env:COMPUTERNAME +'.xml'
+#$c  |Export-Clixml -Path $daten # in Datei speichern
+
+#Laden der Passwort und Nutzerdaten
+$c=Import-Clixml -Path $daten
+
+# Computernamen laden
+$MyComputer=Import-csv -Path $rootpath'Computerlist.csv'
+
+Write-Host "Contakt mit Computern aufnehmen"
+# Security Logs aller Computer der Liste auslesen in einer Datei zusammenfassen
+$MyComputer | ForEach-Object {
+
+
+Write-Host "Computer:" $_.Computername
+$werte=Invoke-Command -ComputerName $_.Computername -ScriptBlock {Get-EventLog Security 4625,4720,4722,4725 -Newest 10 }
+# Exportieren in CSV
+$werte | Select-Object EventId,Time  | Export-Csv $rootpath'Securitylog.csv'
+
+}
+```
